@@ -22,11 +22,25 @@ class MyApp extends StatelessWidget {
 //        primarySwatch: Colors.cyan,
 //      ),
 //      home: MyHomePage(title: 'Flutter Demo Home Page'),
-      home: new Container(
-        color: Colors.purple,
-        padding: const EdgeInsets.all(100),
-        child: const FlutterLogo()  ,
-//teestt
+      home: new Scaffold(
+        floatingActionButton:
+          new RaisedButton(onPressed: null, child: new Text("Push Me")),
+
+        appBar: new AppBar(
+          title: new Text("Hello"),
+          backgroundColor: Colors.red,
+        ),
+
+        bottomNavigationBar: new Text("Bottom"),
+
+        drawer: new Text("hello"),
+
+        persistentFooterButtons: <Widget>[
+          new Text("f1"),
+          new Text("f2")
+        ],
+
+        body: new Text("Body"),
       )
     );
   }
